@@ -41,7 +41,7 @@ public class LoginTestRunner extends Setup {
     @Test(priority = 3, description = "Checking unsuccessfully login with invalid username and valid password")
     public void doLoginwithInvalidUsername(){
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.doLogin("admin","admin12356");
+        loginPage.doLogin("admin12","admin123");
         String alertActualRslt= driver.findElements(By.className("oxd-text")).get(1).getText();
         String alertExpected="Invalid credentials";
         SoftAssert softAssert=new SoftAssert(); //soft assertion
