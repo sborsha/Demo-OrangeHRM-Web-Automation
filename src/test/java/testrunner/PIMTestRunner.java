@@ -66,7 +66,7 @@ public class PIMTestRunner extends Setup {
         Assert.assertTrue(actualmessage.contains("Personal Details"));
     }
 
-    //@Test(priority = 3, description = "Verify unsuccessful creation of a new employee with a duplicate employee ID or username.")
+    @Test(priority = 3, description = "Verify unsuccessful creation of a new employee with a duplicate employee ID or username.")
     public void employeeRegistrationWithMissingSomeField() throws InterruptedException, IOException, ParseException {
         PIMPage pimPage = new PIMPage(driver);
         Faker faker = new Faker();
